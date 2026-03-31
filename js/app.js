@@ -1,3 +1,6 @@
+console.log("app.js loaded");
+console.log(products);
+
 let cart = [];
 
 // products দেখানোর div
