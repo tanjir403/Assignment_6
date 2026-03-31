@@ -80,237 +80,55 @@
     </div>
   </section>
 
-  <!-- Toggle -->
+  <!-- Toggle Buttons -->
   <div class="text-center my-10 px-4">
-    <button class="btn bg-purple-600 text-white rounded-full px-6 border-none hover:bg-purple-700">
+    <button
+      id="products-btn"
+      onclick="showProducts()"
+      class="btn bg-purple-600 text-white rounded-full px-6 border-none hover:bg-purple-700"
+    >
       Product
     </button>
-    <button class="btn btn-outline rounded-full px-6 border-2 border-purple-600 text-purple-600 ml-3 hover:bg-purple-50">
-      Cart (0)
+
+    <button
+      id="cart-btn"
+      onclick="showCart()"
+      class="btn btn-outline rounded-full px-6 border-2 border-purple-600 text-purple-600 ml-3 hover:bg-purple-50"
+    >
+      Cart (<span id="cart-count">0</span>)
     </button>
   </div>
 
   <!-- Products -->
-  <section class="px-6 md:px-10 pb-16">
+  <section id="products-section" class="px-6 md:px-10 pb-16">
     <h2 class="text-3xl font-bold text-center mb-3">Premium Digital Tools</h2>
     <p class="text-center text-gray-500 mb-10 max-w-2xl mx-auto">
       Choose from our curated collection of high-quality tools, templates,
       and creative resources designed to boost productivity.
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Card 1 -->
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 h-full flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <img src="assets/products/writing_2327400 1.png" alt="AI Writing Pro" class="w-14 h-14 object-contain" />
-          <span class="text-xs font-semibold bg-orange-100 text-orange-600 px-3 py-1 rounded-full">
-            Best Seller
-          </span>
-        </div>
-
-        <h3 class="text-xl font-bold">AI Writing Pro</h3>
-        <p class="text-sm text-gray-500 mt-3 leading-6 flex-grow">
-          Generate high-quality content, blogs, and marketing copy in seconds with advanced AI assistance.
-        </p>
-
-        <div class="mt-5">
-          <p class="text-3xl font-bold">$29</p>
-          <p class="text-sm text-gray-400 mt-1">/month</p>
-        </div>
-
-        <ul class="mt-5 text-sm space-y-2 text-gray-700">
-          <li>✔ Unlimited AI generations</li>
-          <li>✔ 50+ writing templates</li>
-          <li>✔ Built-in grammar checker</li>
-        </ul>
-
-        <button class="btn mt-6 w-full rounded-full bg-purple-600 text-white border-none hover:bg-purple-700">
-          Buy Now
-        </button>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 h-full flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <img src="assets/products/design-tool.png" alt="Design Templates Pack" class="w-14 h-14 object-contain" />
-          <span class="text-xs font-semibold bg-purple-100 text-purple-600 px-3 py-1 rounded-full">
-            Popular
-          </span>
-        </div>
-
-        <h3 class="text-xl font-bold">Design Templates Pack</h3>
-        <p class="text-sm text-gray-500 mt-3 leading-6 flex-grow">
-          Get access to 2000+ premium templates for presentations, social media, and business marketing materials.
-        </p>
-
-        <div class="mt-5">
-          <p class="text-3xl font-bold">$49</p>
-          <p class="text-sm text-gray-400 mt-1">/one-time</p>
-        </div>
-
-        <ul class="mt-5 text-sm space-y-2 text-gray-700">
-          <li>✔ 2000+ premium templates</li>
-          <li>✔ Monthly content updates</li>
-          <li>✔ Commercial usage license</li>
-        </ul>
-
-        <button class="btn mt-6 w-full rounded-full bg-purple-600 text-white border-none hover:bg-purple-700">
-          Buy Now
-        </button>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 h-full flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <img src="assets/products/camera.png" alt="Premium Stock Assets" class="w-14 h-14 object-contain" />
-          <span class="text-xs font-semibold bg-green-100 text-green-600 px-3 py-1 rounded-full">
-            New
-          </span>
-        </div>
-
-        <h3 class="text-xl font-bold">Premium Stock Assets</h3>
-        <p class="text-sm text-gray-500 mt-3 leading-6 flex-grow">
-          Access millions of royalty-free photos, videos, icons, and graphics for client and personal projects.
-        </p>
-
-        <div class="mt-5">
-          <p class="text-3xl font-bold">$19</p>
-          <p class="text-sm text-gray-400 mt-1">/month</p>
-        </div>
-
-        <ul class="mt-5 text-sm space-y-2 text-gray-700">
-          <li>✔ 10M+ premium assets</li>
-          <li>✔ Commercial use allowed</li>
-          <li>✔ No attribution required</li>
-        </ul>
-
-        <button class="btn mt-6 w-full rounded-full bg-purple-600 text-white border-none hover:bg-purple-700">
-          Buy Now
-        </button>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 h-full flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <img src="assets/products/operation.png" alt="Automation Toolkit" class="w-14 h-14 object-contain" />
-          <span class="text-xs font-semibold bg-purple-100 text-purple-600 px-3 py-1 rounded-full">
-            Popular
-          </span>
-        </div>
-
-        <h3 class="text-xl font-bold">Automation Toolkit</h3>
-        <p class="text-sm text-gray-500 mt-3 leading-6 flex-grow">
-          Automate repetitive tasks and streamline your entire workflow with smart tools and integrations.
-        </p>
-
-        <div class="mt-5">
-          <p class="text-3xl font-bold">$79</p>
-          <p class="text-sm text-gray-400 mt-1">/month</p>
-        </div>
-
-        <ul class="mt-5 text-sm space-y-2 text-gray-700">
-          <li>✔ 50+ automation packs</li>
-          <li>✔ API access included</li>
-          <li>✔ Custom workflow support</li>
-        </ul>
-
-        <button class="btn mt-6 w-full rounded-full bg-purple-600 text-white border-none hover:bg-purple-700">
-          Buy Now
-        </button>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 h-full flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <img src="assets/products/portfolio.png" alt="Resume Builder Pro" class="w-14 h-14 object-contain" />
-          <span class="text-xs font-semibold bg-green-100 text-green-600 px-3 py-1 rounded-full">
-            New
-          </span>
-        </div>
-
-        <h3 class="text-xl font-bold">Resume Builder Pro</h3>
-        <p class="text-sm text-gray-500 mt-3 leading-6 flex-grow">
-          Create polished resumes and cover letters that help you stand out in competitive job markets.
-        </p>
-
-        <div class="mt-5">
-          <p class="text-3xl font-bold">$15</p>
-          <p class="text-sm text-gray-400 mt-1">/one-time</p>
-        </div>
-
-        <ul class="mt-5 text-sm space-y-2 text-gray-700">
-          <li>✔ 100+ modern templates</li>
-          <li>✔ ATS-friendly formatting</li>
-          <li>✔ Easy PDF export</li>
-        </ul>
-
-        <button class="btn mt-6 w-full rounded-full bg-purple-600 text-white border-none hover:bg-purple-700">
-          Buy Now
-        </button>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300 h-full flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <img src="assets/products/social-media.png" alt="Social Media Content Kit" class="w-14 h-14 object-contain" />
-          <span class="text-xs font-semibold bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">
-            Best Seller
-          </span>
-        </div>
-
-        <h3 class="text-xl font-bold">Social Media Content Kit</h3>
-        <p class="text-sm text-gray-500 mt-3 leading-6 flex-grow">
-          Build a stronger online presence with ready-to-use content assets, planners, and performance tools.
-        </p>
-
-        <div class="mt-5">
-          <p class="text-3xl font-bold">$39</p>
-          <p class="text-sm text-gray-400 mt-1">/month</p>
-        </div>
-
-        <ul class="mt-5 text-sm space-y-2 text-gray-700">
-          <li>✔ 5000+ ready assets</li>
-          <li>✔ Scheduler included</li>
-          <li>✔ Analytics dashboard</li>
-        </ul>
-
-        <button class="btn mt-6 w-full rounded-full bg-purple-600 text-white border-none hover:bg-purple-700">
-          Buy Now
-        </button>
-      </div>
-
-    </div>
+    <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </section>
 
-  <!-- Cart UI -->
-  <section class="hidden max-w-3xl mx-auto px-6 md:px-10 pb-16">
+  <!-- Cart Section -->
+  <section id="cart-section" class="hidden max-w-3xl mx-auto px-6 md:px-10 pb-16">
     <h2 class="text-2xl font-bold text-center mb-3">Your Cart</h2>
-    <p class="text-center text-gray-500 mb-8">No products added yet</p>
+    <p id="empty-cart-message" class="text-center text-gray-500 mb-8">
+      No products added yet
+    </p>
 
-    <div class="space-y-4">
-      <div class="bg-white rounded-2xl shadow-sm p-5 flex items-center justify-between">
-        <div class="flex items-center gap-4">
-          <div class="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600 font-bold">
-            AI
-          </div>
-          <div>
-            <h3 class="font-bold">AI Writing Pro</h3>
-            <p class="text-sm text-gray-500">$29 /month</p>
-          </div>
-        </div>
-        <button class="btn btn-sm btn-outline text-red-500 border-red-300 rounded-full px-4">
-          Remove
-        </button>
-      </div>
-    </div>
+    <div id="cart-items" class="space-y-4"></div>
 
-    <div class="mt-6 bg-white rounded-2xl shadow-sm p-5">
+    <div id="cart-summary" class="hidden mt-6 bg-white rounded-2xl shadow-sm p-5">
       <div class="flex justify-between text-lg font-semibold">
         <span>Total</span>
-        <span>$29</span>
+        <span id="cart-total">$0</span>
       </div>
-      <button class="btn mt-5 w-full rounded-full bg-purple-600 text-white border-none hover:bg-purple-700">
+
+      <button
+        onclick="checkout()"
+        class="btn mt-5 w-full rounded-full bg-purple-600 text-white border-none hover:bg-purple-700"
+      >
         Proceed to Checkout
       </button>
     </div>
@@ -354,7 +172,6 @@
     <p class="text-gray-500 mt-3">Choose the plan that matches your workflow and team size</p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-
       <div class="bg-white p-8 text-left rounded-2xl shadow-sm">
         <h3 class="text-2xl font-bold">Starter</h3>
         <p class="text-gray-500 mt-2">Perfect for getting started</p>
@@ -409,7 +226,6 @@
           Contact Sales
         </button>
       </div>
-
     </div>
   </section>
 
@@ -472,5 +288,7 @@
     </div>
   </footer>
 
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
