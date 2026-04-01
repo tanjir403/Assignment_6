@@ -1,16 +1,57 @@
-# React + Vite
+# DigiTools Product Cart App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Description
+DigiTools is a modern and responsive product cart web application built using React. Users can browse digital products, add items to the cart, remove them, and complete checkout with real-time feedback using toast notifications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ⚙️ Technologies Used
+- React.js
+- Tailwind CSS
+- DaisyUI
+- JavaScript (ES6+)
+- React-Toastify
+- JSON (for product data)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Key Features
 
-## Expanding the ESLint configuration
+### 🛒 Product & Cart System
+- Dynamic product rendering from JSON data
+- Add to cart functionality
+- Remove items from cart
+- Checkout clears all cart items
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔔 Interactive UI
+- Toast notifications for add, remove, and checkout actions
+- Cart item count displayed in the navbar
+- Toggle between Product and Cart sections
+
+### 📱 Responsive Design
+- Fully responsive layout for mobile, tablet, and desktop
+- Mobile-friendly navigation with hamburger menu
+- Clean and modern UI based on Figma design
+
+---
+
+## 🌐 Live Demo
+👉 https://lnkd.in/gumZkJTk  
+
+---
+
+## 🔗 GitHub Repository
+👉 https://lnkd.in/gNEdiDxt  
+
+---
+
+## 🎯 Learning Outcomes
+- Improved understanding of React state management
+- Built reusable UI components
+- Practiced responsive design principles
+- Learned how to manage user interactions with toast notifications
+
+---
+
+## 📌 Conclusion
+This project helped me gain hands-on experience in building a real-world React application with modern UI and user-friendly interactions.
