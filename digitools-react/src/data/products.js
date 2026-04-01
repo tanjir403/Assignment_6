@@ -12,12 +12,12 @@ const products = [
       "50+ writing templates",
       "Built-in grammar checker"
     ],
-    icon: "assets/products/writing_2327400 1.png"
+    icon: "/assets/products/write.png"
   },
   {
     id: 2,
     name: "Design Templates Pack",
-    description: "Get access to 2000+ premium templates for presentations, social media, and business marketing materials.",
+    description: "Get access to premium templates for presentations, social media, and marketing materials.",
     price: 49,
     period: "one-time",
     tag: "Popular",
@@ -27,12 +27,12 @@ const products = [
       "Monthly content updates",
       "Commercial usage license"
     ],
-    icon: "assets/products/design-tool.png"
+    icon: "/assets/products/design-tool.png"
   },
   {
     id: 3,
     name: "Premium Stock Assets",
-    description: "Access millions of royalty-free photos, videos, icons, and graphics for client and personal projects.",
+    description: "Access royalty-free photos, icons, videos, and graphics for client and personal projects.",
     price: 19,
     period: "month",
     tag: "New",
@@ -42,12 +42,12 @@ const products = [
       "Commercial use allowed",
       "No attribution required"
     ],
-    icon: "assets/products/camera.png"
+    icon: "/assets/products/camera.png"
   },
   {
     id: 4,
     name: "Automation Toolkit",
-    description: "Automate repetitive tasks and streamline your entire workflow with smart tools and integrations.",
+    description: "Automate repetitive tasks and streamline your workflow with smart tools and integrations.",
     price: 79,
     period: "month",
     tag: "Popular",
@@ -57,7 +57,7 @@ const products = [
       "API access included",
       "Custom workflow support"
     ],
-    icon: "assets/products/operation.png"
+    icon: "/assets/products/operation.png "
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ const products = [
       "ATS-friendly formatting",
       "Easy PDF export"
     ],
-    icon: "assets/products/portfolio.png"
+    icon: "/assets/products/portfolio.png"
   },
   {
     id: 6,
@@ -87,6 +87,8 @@ const products = [
       "Scheduler included",
       "Analytics dashboard"
     ],
-    icon: "assets/products/social-media.png"
+    icon: "/assets/products/social-media.png"
   }
 ];
+
+export default products;
